@@ -37,20 +37,35 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = {
                 name: formData.get('name'),
                 email: formData.get('email'),
-                phone: formData.get('phone'),
+                phone: formData.get('phone') || 'Not provided',
                 issueType: formData.get('issueType'),
                 message: formData.get('message'),
                 timestamp: new Date().toISOString()
             };
 
-            console.log('Form submission:', data);
+            const whatsappNumber = '15705409942';
+            const whatsappMessage = `*New Case Review Submission*\n\n` +
+                `*Name:* ${data.name}\n` +
+                `*Email:* ${data.email}\n` +
+                `*Phone:* ${data.phone}\n` +
+                `*Issue Type:* ${data.issueType}\n` +
+                `*Case Details:*\n${data.message}\n\n` +
+                `*Submitted:* ${new Date().toLocaleString()}`;
+
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
             contactForm.style.display = 'none';
             formSuccess.style.display = 'block';
 
             setTimeout(() => {
+                window.open(whatsappURL, '_blank');
                 contactForm.reset();
-            }, 500);
+            }, 800);
+
+            setTimeout(() => {
+                contactForm.style.display = 'grid';
+                formSuccess.style.display = 'none';
+            }, 5000);
         });
     }
 
