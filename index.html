@@ -12,17 +12,29 @@
         <div class="nav-container">
             <div class="nav-brand">MtkCyberTech Support</div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <div class="language-selector" role="combobox" aria-label="Select language" aria-expanded="false" aria-haspopup="listbox">
+                    <button class="language-selector-btn" aria-label="Change language" tabindex="0">
+                        <span class="current-language-flag"></span>
+                        <span class="current-language-name"></span>
+                        <svg class="language-selector-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="language-selector-dropdown" role="listbox" aria-label="Available languages"></ul>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -30,31 +42,31 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Cybercrime, Scam Recovery & Digital Investigation — Done Right</h1>
-                    <p class="hero-description">
+                    <h1 class="hero-title" data-i18n="hero.title">Cybercrime, Scam Recovery & Digital Investigation — Done Right</h1>
+                    <p class="hero-description" data-i18n="hero.description">
                         We help individuals and businesses investigate digital fraud, verify online identities,
                         recover compromised accounts, and strengthen cybersecurity using ethical, legal, and proven methods.
                     </p>
                     <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Request a Free Case Review</a>
-                        <a href="#identity-verification" class="btn btn-secondary">Verify an Online Identity</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Request a Free Case Review</a>
+                        <a href="#identity-verification" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Verify an Online Identity</a>
                     </div>
                     <div class="trust-indicators">
                         <div class="trust-item">
                             <span class="trust-icon">✓</span>
-                            <span>Ethical & Legal Investigations</span>
+                            <span data-i18n="hero.trust1">Ethical & Legal Investigations</span>
                         </div>
                         <div class="trust-item">
                             <span class="trust-icon">✓</span>
-                            <span>Confidential Handling</span>
+                            <span data-i18n="hero.trust2">Confidential Handling</span>
                         </div>
                         <div class="trust-item">
                             <span class="trust-icon">✓</span>
-                            <span>Fast Turnaround</span>
+                            <span data-i18n="hero.trust3">Fast Turnaround</span>
                         </div>
                         <div class="trust-item">
                             <span class="trust-icon">✓</span>
-                            <span>Free Initial Review</span>
+                            <span data-i18n="hero.trust4">Free Initial Review</span>
                         </div>
                     </div>
                 </div>
@@ -64,16 +76,16 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="section-header">
-                    <h2>About Us</h2>
+                    <h2 data-i18n="about.title">About Us</h2>
                     <div class="section-divider"></div>
                 </div>
                 <div class="about-content">
-                    <p>
+                    <p data-i18n="about.content1">
                         MtkCyberTech Support provides professional cybersecurity support, digital investigations,
                         and fraud-response services. We specialize in helping victims of scams, impersonation,
                         account compromise, and online deception.
                     </p>
-                    <p>
+                    <p data-i18n="about.content2">
                         We do not promise guaranteed recoveries. We provide accurate analysis, documented findings,
                         and realistic next steps—so clients can make informed decisions with confidence.
                     </p>
@@ -84,7 +96,7 @@
         <section id="services" class="services">
             <div class="container">
                 <div class="section-header">
-                    <h2>Services & Pricing</h2>
+                    <h2 data-i18n="services.title">Services & Pricing</h2>
                     <div class="section-divider"></div>
                 </div>
                 <div class="services-grid">

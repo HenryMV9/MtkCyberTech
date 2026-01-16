@@ -1,4 +1,7 @@
+import { initializeI18n } from './i18n.js';
+
 document.addEventListener('DOMContentLoaded', function() {
+    initializeI18n();
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu a');
