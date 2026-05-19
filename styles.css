@@ -262,7 +262,7 @@ body {
 
 .hero {
     padding: calc(80px + var(--spacing-3xl)) 0 var(--spacing-3xl);
-    background-image: url('/public/mtkcybertech-background_image.jpeg');
+    background-image: url('./public/mtkcybertech-background_image.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
